@@ -285,7 +285,10 @@ body{
     display: inline-flex;
     list-style: none;
 }
-
+.footer-logo{
+    width: auto;
+    max-width: 70px;
+}
 .footer-icon-style{
     font-size: 26px;
 }
@@ -360,10 +363,7 @@ body{
         width: 100%;
         max-width: 120px;
     }
-    .footer-logo{
-        width: auto;
-        max-width: 70px;
-    }
+    
     .footer-padding{
         padding: 20px;
     }
