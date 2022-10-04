@@ -7,12 +7,11 @@ body{
 
 /* navbar style */
 .logo_img{
-    max-width: 70%;
+    max-width: 100%;
     height: auto;
+    width: 120px;
 }
-.navbar-nav{
-    width: 60%;
-}
+
 .navbar-nav button{
     width: 100%;
 }
@@ -50,6 +49,8 @@ body{
 }
 .login-style{
     text-transform:uppercase;
+    max-width: 100%;
+    width: 100%;
 }
 /* navbar style */
 
@@ -64,9 +65,6 @@ body{
 }
 .banner-style-base{
     margin: 50px auto;
-}
-.banner-button-group{
-    gap: 20px;
 }
 .title-black-text{
     font-weight: 800;
@@ -98,6 +96,7 @@ body{
     border-radius: 10px;
     max-width: 10rem;
     width: 100%;
+    height: 50px;
 }
 
 /* banner style */
@@ -315,14 +314,11 @@ body{
     .banner-fluid-padding{
         padding: 100px 150px ;
     }
-    .banner-button-group{
-        display: flex;
-        justify-content: center;
-    }
     .title-black-text{
         font-size: 43px;
         text-align: center;
         width: 100%;
+        font-weight: 700;
     }
     .small-p{
         font-size: 18px;
@@ -331,7 +327,7 @@ body{
         width: 100%;
     }
     .fluid-container-padding{
-        padding: 50px 25px ;
+        padding: auto 25px;
     }
     .email-style{
         width: 50%;
@@ -360,6 +356,14 @@ body{
     .gray-text-18{
         padding-top: 10px !important;
     }
+    .logo_img{
+        width: 100%;
+        max-width: 120px;
+    }
+    .footer-logo{
+        width: auto;
+        max-width: 70px;
+    }
     .footer-padding{
         padding: 20px;
     }
@@ -374,9 +378,27 @@ body{
 /* Media query for midium screen */
 
 /* Media query for small screen */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+    .show{
+        width: 100%;
+    }
+    .show .row .col-8 {
+        width: 100%;
+    }
+    .show .row .col-3{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .show .row .col-1{
+        display: none;
+    }
+    .show .login-style {
+        width: 150px;
+        max-width: none;
+    }
     .logo_img{
-        max-width: 40%;
+        max-width: 100%;
         height: auto;
     }
     .active{
@@ -387,6 +409,17 @@ body{
         width: fit-content;
         border-radius: none;
         padding: auto;
+    }
+    .banner-fluid-padding{
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    .logo-align{
+        width: 75%;
+        height: 100%;
+    }
+    .button-align{
+        width: 25%;
     }
     .navbar-toggler{
         border: none;
@@ -403,13 +436,14 @@ body{
         
     }
     .navbar-brand{
-        width: 70% !important;
+        width: 100% !important;
         margin-right: 0px !important;
         max-width: none !important;
+        padding: 0px ;
     }
     .menu-button-group{
-        width: 100% !important;
         max-width: none !important;
+
     }
     .navbar-toggler:focus{
         outline: none !important;
@@ -418,9 +452,11 @@ body{
     }
     .navbar-nav{
         text-align: center;
+        margin-top:0px;
+        width: 100%;
     }
     .navbar-nav button{
-        width: 80%;
+        width: 100%;
     }
     .nav-link{
         font-size: 12px;
@@ -428,16 +464,12 @@ body{
     .offcanvas-end{
         width: 60% !important;
     }
-    .banner-button-group{
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
     .title-black-text{
+        font-weight: 700;
         font-size: 30px;
         text-align: center;
-        width: 70%;
         margin: auto;
+        line-height: 1.4;
     }
     .small-p{
         font-size: 14px;
@@ -460,7 +492,10 @@ body{
         margin-top: 20px;
     }
     .fluid-container-padding{
-        padding: 50px 15px ;
+        padding: auto 15px ;
+    }
+    .login-style{
+        width: 100%;
     }
     .book-demo-h1{
         width: 100%;
