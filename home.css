@@ -109,10 +109,12 @@ body{
 /* ebook section starts */
 .ebook{
     background-color: #1C283A;
+    padding: 50px 0px;
 }
 .img-container{
     width: fit-content;
     display: inline-block;
+
 }
 .ebook-img-group{
     display: inline-block;
@@ -162,6 +164,9 @@ body{
     margin: 0px 0px 1.5% 0px;
     text-align: center;
     font-size: 20px;
+}
+.book-demo{
+    padding: 70px 10px 10px 10px;
 }
 
 .demo-btn{
@@ -320,7 +325,17 @@ body{
         font-size: 12px;
     }
     .banner-fluid-padding{
-        padding: 100px 150px ;
+        height: 100vh;
+        padding: 175px 100px ;
+    }
+    .main-heading {
+        width: 70%;
+        /* text-align: center; */
+        /* align-self: center; */
+        margin: auto;
+        /* font-size: 42px; */
+        line-height: 1.4;
+        /* font-weight: 700; */
     }
     .title-black-text{
         font-size: 43px;
@@ -341,6 +356,25 @@ body{
     .fluid-container-padding{
         padding: auto 25px;
     }
+    .img-container {
+        width: 100%;
+        padding: 50px 0px;
+        margin: 0px;
+    }
+    .ebook-inner {
+        width: 100%;
+        margin: 0px !important;
+        max-width: none;
+    }
+    .ebook-img-group{
+        width: 34%;
+    }
+    .text-form {
+        width: 65%;
+    }
+    .book-demo-p{
+        font-size: 21px;
+    }
     .email-style{
         width: 50%;
         text-align: start;
@@ -355,6 +389,15 @@ body{
         width: 100%;
         padding: 0px !important;
         text-align: start;
+    }
+    .email-wrap-updown{
+        flex-direction: column-reverse;
+    }
+    .container-simple-padding{
+        padding: 50px 10px;
+    }
+    .social-selling-text {
+        margin-top: 30px;
     }
     .step-style{
         margin: 10px auto;
@@ -409,6 +452,9 @@ body{
     .show .login-style {
         width: 150px;
         max-width: none;
+    }
+    .img-container{
+        margin: 0px 10px;
     }
     .logo_img{
         max-width: 100%;
@@ -477,10 +523,13 @@ body{
     }
     .title-black-text{
         font-weight: 700;
-        font-size: 30px;
+        font-size: 26px;
         text-align: center;
         margin: auto;
         line-height: 1.4;
+    }
+    .main-heading{
+        font-size: 30px;
     }
     .small-p{
         font-size: 14px;
@@ -493,13 +542,14 @@ body{
         width: 100%;
         justify-content: start;
     }
-    .ebook-inner{
+    .ebook-inner {
         display: flex;
         max-width: none !important;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        height: 100vh;
+        height: 85vh;
+        min-height: 667px;
     }
     .text-form{
         padding-left: 0px;
@@ -515,11 +565,13 @@ body{
     }
     .back-dot {
         width: 110px;
+        margin-top: 125px;
     }
     .book-cover {
         margin-left: -113px;
-        margin-top: 25px;
-        width: 150px;
+        display: inline-block;
+        margin-top: 10px;
+        width: 200px;
     }
     .book-demo-h1{
         width: 100%;
@@ -546,6 +598,14 @@ body{
         font-size: 15px;
         text-align: start;
         width: 100% ;
+    }
+    .h3-style{
+        font-size: 20px;
+        margin: 10px 0px;
+    }
+    .ebook-explanation-p {
+        font-size: 16px;
+        margin: 10px 0px;
     }
     .email-wrap-updown{
         display: flex;
@@ -635,3 +695,4 @@ body{
     }
 }
 /* Media query for small screen */
+
